@@ -1,8 +1,7 @@
 import Aula_1.Models.Conta;
 import java.util.Random;
 import java.util.Scanner;
-
-import javax.lang.model.util.ElementScanner6;
+ 
 
 public class Trasferencias {
 
@@ -69,7 +68,7 @@ public class Trasferencias {
              System.out.println("\n");
              System.out.println(c2.toString());
 
-             
+
             sc1.close();
         }
 
