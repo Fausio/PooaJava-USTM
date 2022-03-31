@@ -1,4 +1,5 @@
 package Aula_1.Models;
+
 import java.util.OptionalDouble;
 import java.util.stream.DoubleStream;
 
@@ -74,7 +75,7 @@ public class Estudante {
     }
 
     public String toString() {
-        return "\n\n"+ this.number + " - " + this.nome + " - " + this.average +"\n\n";
+        return " Numero: " + this.number + " Nome: " + this.nome + " - " + " Nota: " + this.average;
     }
     // endregion
 }

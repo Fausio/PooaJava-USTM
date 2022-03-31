@@ -44,7 +44,7 @@ public class GestaoDePauta {
             }
 
             System.out.println(
-                    "\n\n 1 --> Adicionar notas de frequencia de Cada estudante e calcular a media  \n 2 --> Adicionar notas de frequencia de Todos estudante e calcular a media\n\n 2 -->  Sair do Sistema\n");
+                    "\n\n 1 --> Adicionar notas de frequencia de Cada estudante e calcular a media  \n 2 --> Adicionar notas de frequencia de Todos estudante e calcular a media\n 3 -->  Sair do Sistema\n");
 
             int NoteOptions = sc.nextInt();
 
