@@ -1,9 +1,7 @@
 
 import java.util.ArrayList;
 import java.util.Scanner;
-
-import javax.swing.text.StyledEditorKit.ForegroundAction;
-
+ 
 import Aula_1.Models.Estudante;
 
 public class GestaoDePauta {
