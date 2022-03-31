@@ -1,9 +1,12 @@
+package Aula_1.Models;
 import java.util.OptionalDouble;
 import java.util.stream.DoubleStream;
 
 public class Estudante {
 
     // region private props
+
+    private int number;
     private String nome;
     private double nota1;
     private double nota2;
@@ -22,6 +25,9 @@ public class Estudante {
     // endregion
 
     // region Gets
+    public int getNumber() {
+        return this.number;
+    }
 
     public String getNome() {
         return this.nome;
@@ -42,6 +48,11 @@ public class Estudante {
     // endregion
 
     // region sets
+
+    public void SetNumber(int value) {
+        this.number = value;
+    }
+
     public void SetNome(String value) {
         this.nome = value;
     }
@@ -58,8 +69,12 @@ public class Estudante {
     // region publics methods
     public void CalcAverage(double nota1, double nota2) {
 
-        OptionalDouble result =   DoubleStream.of(nota1,nota2).average(); 
+        OptionalDouble result = DoubleStream.of(nota1, nota2).average();
         this.average = result.orElse(-1);
+    }
+
+    public String toString() {
+        return "\n\n"+ this.number + " - " + this.nome + " - " + this.average +"\n\n";
     }
     // endregion
 }

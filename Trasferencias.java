@@ -13,7 +13,7 @@ public class Trasferencias {
 
         sc.close();
 
-        if (option < 0 || option < 2) {
+        if (option < 0 || option > 2) {
 
             System.out.println("Valor Opção Invalida");
 
