@@ -1,9 +1,14 @@
+import java.util.OptionalDouble;
+import java.util.stream.DoubleStream;
+
 public class Estudante {
 
     // region private props
     private String nome;
     private double nota1;
     private double nota2;
+    private double average;
+
     // endregion
 
     // region constructores
@@ -29,6 +34,11 @@ public class Estudante {
     public double getNota2() {
         return this.nota2;
     }
+
+    public double getaverage() {
+        return this.average;
+    }
+
     // endregion
 
     // region sets
@@ -42,6 +52,14 @@ public class Estudante {
 
     public void SetNota2(Double value) {
         this.nota2 = value;
+    }
+    // endregion
+
+    // region publics methods
+    public void CalcAverage(double nota1, double nota2) {
+
+        OptionalDouble result =   DoubleStream.of(nota1,nota2).average(); 
+        this.average = result.orElse(-1);
     }
     // endregion
 }
